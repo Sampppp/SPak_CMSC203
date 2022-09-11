@@ -1,3 +1,17 @@
+/*
+ * Class: CMSC203 
+ * Instructor: David Kujit
+ * Description: WiFi Diagnostics tool
+ * Due: 09/12/2022
+ * Platform/compiler: Eclipse IDE
+ * I pledge that I have completed the programming 
+ * assignment independently. I have not copied the code 
+ * from a student or any source. I have not given my code 
+ * to any student.
+   Print your Name here: Samson Pak
+*/
+
+
 package wifiTroubleshooting;
 
 import java.util.Scanner;
