@@ -12,11 +12,11 @@
 */
 
 
-package wifiTroubleshooting;
+package WifiDiagnosis;
 
 import java.util.Scanner;
 
-public class wifiTroubleshooting {
+public class WifiDiagnosis {
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in); //creates a scanner obj for user input
 
