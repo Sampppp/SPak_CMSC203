@@ -44,7 +44,7 @@ public class RNG {
 		if (nextGuess>=highGuess || nextGuess<=lowGuess) {
 				   System.out.println("   >>> Guess must be between "+lowGuess+" and "+highGuess+
 						   ".  Try again");				   
-				   rtnValue = false;
+				  return rtnValue = false;
 			   }
 		count++;
 		return rtnValue;
