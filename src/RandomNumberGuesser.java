@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+import java.lang.Exception;
+
 import java.lang.Math;
 
 public class RandomNumberGuesser {
@@ -8,7 +11,7 @@ public class RandomNumberGuesser {
 
 		System.out.println("This application generates a random integer between 0 and 100 and asks the user to guess repeatedly until they guess correctly.");
 		
-		int input, low = 0, high = 0, randomNumber = 0;
+		int input = 0, low = 0, high = 0, randomNumber = 0;
 		boolean tryAgain, error;
 		
 		for(; RNG.getCount() < 7;) {
@@ -23,8 +26,15 @@ public class RandomNumberGuesser {
 				else
 					System.out.printf("Enter your next guess between %d and %d\n",low, high);
 				do {
-				input = in.nextInt();
-				}while(!RNG.inputValidation(input, low, high));
+					try {
+						input = in.nextInt();
+					}
+					catch(Exception e){
+						in.next();
+						input = 0;
+						System.out.println("Please enter an integer!");
+					}
+				}while(input == 0 || !RNG.inputValidation(input, low, high));
 				if(input == randomNumber) {	//
 					System.out.println("Congradulations, you guessed correctly");
 					do {
