@@ -78,5 +78,15 @@ public class GradeBook
       else
          return sum() - minimum();
    }
+   public int getScoreSize() {
+	   return scoresSize;
+   }
+   public String toString() {
+	   String temp = "";
+	   for(int i = 0; i < scoresSize; i++) {
+		  temp += scores[i] + " ";
+	   }
+	   return temp;
+   }
 }
 
