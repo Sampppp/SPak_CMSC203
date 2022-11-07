@@ -1,4 +1,15 @@
-
+/*
+ * Class: CMSC203 
+ * Instructor: David Kujit
+ * Description: HolidayBonus calculates bonuses according to the passed in array and TwoDimRaggedArrayUtility provides methods to read the data in ragged arrays
+ * Due: 11/7/2022
+ * Platform/compiler: Eclipse IDE
+ * I pledge that I have completed the programming 
+ * assignment independently. I have not copied the code 
+ * from a student or any source. I have not given my code 
+ * to any student.
+   Print your Name here: Samson Pak
+*/
 public class HolidayBonus {
 
 	HolidayBonus(){
